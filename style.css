@@ -1,0 +1,256 @@
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== SEA BEACH BACKGROUND THEME ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35)
+    ),
+    url("beach.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #222;
+}
+
+/* ===== HEADER ===== */
+header {
+  text-align: center;
+  padding: 22px 16px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+header p {
+  font-size: 14px;
+  margin-top: 6px;
+  opacity: 0.9;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  padding: 16px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ===== GLASS ROOM TEMPLATE ===== */
+.room {
+  position: relative;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+  padding: 16px;
+  margin-bottom: 24px;
+
+  /* glass effect */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,0.18),
+    inset 0 0 0 1px rgba(255,255,255,0.4);
+}
+
+/* ===== IMAGE ===== */
+.room img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+
+/* ===== TAGS ===== */
+.tag {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 12px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.ac {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+
+.nonac {
+  background: linear-gradient(135deg, #475569, #1f2937);
+}
+
+/* ===== TEXT ===== */
+.room h2 {
+  font-size: 19px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.room p {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #444;
+}
+
+/* ===== BUTTONS (PREMIUM LOOK) ===== */
+.btn {
+  display: block;
+  text-align: center;
+  padding: 13px;
+  margin-top: 10px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.call {
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+}
+
+.wa {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+/* ===== STAR RATING (CLEAN) ===== */
+.stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  font-size: 38px;
+  margin: 10px 0;
+}
+
+.stars input {
+  display: none;
+}
+
+.stars label {
+  color: #d1d5db;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.stars input:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+  color: #f59e0b;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 14px;
+  font-size: 14px;
+  color: #fff;
+  background: #0f172a;
+}
+
+.room img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  box-shadow: inset 0 -40px 40px rgba(0,0,0,0.25);
+}
+.room {
+  position: relative;
+  overflow: hidden;
+}
+
+.room::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #38bdf8, #22c55e);
+}
+.tag {
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.btn:active {
+  transform: scale(0.97);
+}
+
+.room h2 {
+  position: relative;
+  padding-bottom: 6px;
+}
+.room::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  pointer-events: none;
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0.35),
+    rgba(255,255,255,0.05),
+    rgba(255,255,255,0.2)
+  );
+}
+.room h2,
+.room p {
+  color: #1f2937;
+}
+/* ===== EXTRA GLOSSY FEEDBACK GLASS ===== */
+.feedback-glass {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 20px 45px rgba(0,0,0,0.25),
+    inset 0 0 0 1px rgba(255,255,255,0.5);
+}
+
+/* ===== STAR OUTLINE STYLE ===== */
+.stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+.stars input {
+  display: none;
+}
+
+/* outline star */
+.stars label {
+  cursor: pointer;
+  padding: 6px;
+  color: transparent;                 /* fill ফাঁকা */
+  -webkit-text-stroke: 1.8px #f59e0b;  /* outline */
+  transition: all 0.25s ease;
+}
+
+/* hover preview */
+.stars label:hover,
+.stars label:hover ~ label {
+  color: #f59e0b;                      /* fill */
+}
+
+/* selected */
+.stars input:checked ~ label {
+  color: #f59e0b;                      /* fill */
+}

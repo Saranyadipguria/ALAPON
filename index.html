@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ALAPON</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🏠 ALAPON </h1>
+  <p>📍Hijli Road, Nijkasba, Khajuri, Purba Medinipur, West Bengal , 721431 </p>
+  <p></p>
+</header>
+
+<div class="container">
+
+  <!-- ROOM 1 -->
+  <div class="room">
+    <span class="tag ac">AC Room ❄️</span>
+    <h2>Room 1</h2>
+    <img src="room1.jpg">
+    <p><b>Rent:</b> ₹1000 / Day</p>
+    <p>AC, Attached Bathroom, Water, Electricity</p>
+    <a class="btn call" href="tel:9933992238">📞 Call Now</a>
+    <a class="btn wa" href="https://wa.me/919933992238">💬 WhatsApp</a>
+  </div>
+
+  <!-- ROOM 2 -->
+  <div class="room">
+    <span class="tag ac">AC Room ❄️</span>
+    <h2>Room 2</h2>
+    <img src="room2.jpg">
+    <p><b>Rent:</b> ₹1000 / Day</p>
+    <p>AC, Attached Bathroom, Water, Electricity</p>
+    <a class="btn call" href="tel:9933992238">📞 Call Now</a>
+    <a class="btn wa" href="https://wa.me/919933992238">💬 WhatsApp</a>
+  </div>
+
+  <!-- ROOM 3 -->
+  <div class="room">
+    <span class="tag nonac">Non-AC Room</span>
+    <h2>Room 3</h2>
+    <img src="room3.jpg">
+    <p><b>Rent:</b> ₹500 / Day</p>
+    <p>Fan, Attached Bathroom, Water, Electricity</p>
+    <a class="btn call" href="tel:9933992238">📞 Call Now</a>
+    <a class="btn wa" href="https://wa.me/919933992238">💬 WhatsApp</a>
+  </div>
+
+  <!-- ROOM 4 -->
+  <div class="room">
+    <span class="tag nonac">Non-AC Room</span>
+    <h2>Room 4</h2>
+    <img src="room4.jpg">
+    <p><b>Rent:</b> ₹500 / Day</p>
+    <p>Fan, Electricity, Water</p>
+    <a class="btn call" href="tel:9933992238">📞 Call Now</a>
+    <a class="btn wa" href="https://wa.me/919933992238">💬 WhatsApp</a>
+  </div>
+
+  <!-- ROOM 5 -->
+  <div class="room">
+    <span class="tag nonac">Non-AC Room</span>
+    <h2>Room 5</h2>
+    <img src="room5.jpg">
+    <p><b>Rent:</b> ₹500 / Day</p>
+    <p> Fan, Ventilation, Water</p>
+    <a class="btn call" href="tel:9933992238">📞 Call Now</a>
+    <a class="btn wa" href="https://wa.me/919933992238">💬 WhatsApp</a>
+  </div>
+
+  <!-- STAR RATING -->
+  <div class="room feedback-glass">
+    <h2 style="text-align:center;">Send Feedback</h2>
+
+    <form onsubmit="sendRating(); return false;">
+      <div class="stars">
+        <input type="radio" name="rating" id="star5" value="5" required><label for="star5">★</label>
+        <input type="radio" name="rating" id="star4" value="4"><label for="star4">★</label>
+        <input type="radio" name="rating" id="star3" value="3"><label for="star3">★</label>
+        <input type="radio" name="rating" id="star2" value="2"><label for="star2">★</label>
+        <input type="radio" name="rating" id="star1" value="1"><label for="star1">★</label>
+      </div>
+
+      <p id="thankyou">
+
+      <button class="btn wa" type="submit">Submit Rating</button>
+    </form>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Daily Room Rent • 9933992238
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
